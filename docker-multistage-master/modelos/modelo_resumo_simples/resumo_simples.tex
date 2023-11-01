@@ -1,0 +1,28 @@
+\documentclass{modelo_resumo_simples}
+
+\primeiroAutor{Adriano Xavier Nobre Junior}
+\abreviacaoPrimeiroAutor{NOBRE JUNIOR, A. X.}
+\notaPrimeiroAutor{Estudante do curso de bacharelado em Sistemas de Informação, IF Goiano – Campus Ceres.}
+
+\segundoAutor{Ronneesley Moura Teles}
+\abreviacaoSegundoAutor{TELES, R. M.}
+\notaSegundoAutor{{Professor orientador, IF Goiano – Campus Ceres.}}
+\titulo{\textit{Docker Multistage} na prática}
+
+\begin{document}
+
+	\construirtitulo
+
+	\construirautores
+	
+	\begin{resumo}	
+	Durante o desenvolvimento de projetos de aplicações é muito comum que se encontre problemas e conflitos de versões de aplicações e sistemas operacionais isso causou o surgimento de Máquinas Virtuais e alternativas conhecidas como Conteinerização que é muito comum sua utilização por serem consideradas leves, rápidas e balanceadas, a ferramenta mais famosa e para pronto uso é o \textit{Docker}. 
+	Mas de fato se obtém imagens leves e rápidas dentro de projetos com complexidade moderada a alta ? O presente trabalho apresentará diferentes possibilidades de aplicação dessa ferramenta no cenário de projetos que utilizam a Conteinerização para gerenciar as ferramentas de desenvolvimento. 
+	Para isso vamos precisar de um computador/notebook com capacidade de virtualização, conhecida como \textit{hypervisor}, com \textit{docker} instalado, criamos os aquivos para criação das máquinas e com as configurações, após isso fizemos o comando de execução do \textit{docker} para cada um dos arquivos e comparamos o tamanho final de cada uma das imagens geradas com as dependências preenchidas. Como resultados observamos que a utilização do \textit{multistage} dentro de projetos gerou uma imagem bem menor, diferente do que foi feito separado onde as dependências eram criadas e mantidas dentro do repositório local de imagens, isso abre porta para uma diminuição dos recursos de armazenamentos em \textit{Runners} de pipelines promovendo a redução de valores em projetos reais. Concluindo podemos promover a divulgação do recurso do \textit{docker} promovendo a visibilidade e redução de custos, abrindo possibilidades para outras otimizações dentro do ambiente \textit{docker}.
+	\end{resumo}
+	
+	\begin{palavras_chave}
+	Computação; Algoritmo; \textit{Infrastructure as a Code}
+	\end{palavras_chave}
+
+\end{document}
